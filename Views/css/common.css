@@ -1,0 +1,322 @@
+.btn{
+    margin-top: 2%;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.btn a{
+    display: inline-block;
+    line-height: 44px;
+    font-size: 16px;
+    min-width: 92px;
+    width: 152px;
+    height: 44px;
+    background-image: url('../img/矩形13.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.button_disable{
+    margin-top: 2%;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.button_disable a{
+    display: inline-block;
+    line-height: 44px;
+    font-size: 16px;
+    min-width: 92px;
+    width: 152px;
+    height: 44px;
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.flg{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.tavern-info{
+    position: absolute;
+    width: 98.7%;
+    margin-bottom: 100px;
+}
+.hotel-order{
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+/* 酒店，会议 */
+.tavern-info{
+    margin-top: 2%;
+
+}
+.tavern-info .title{
+   width: 100%;
+   border-bottom: 1px solid #C9C9C9;
+   line-height: 44px;
+   color: #666666;
+   font-size: 16px;
+
+}
+
+
+.list .item{
+    height: 200px;
+    margin: 25px 0;
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #C9C9C9;
+}
+.list .item .left{
+    width: 199px;
+    height: 170px;
+
+}
+.list .item .left img{
+    width: 100%;
+}
+.list .item .right {
+    width: 100%;
+    display: flex;
+    height: 170px;
+    justify-content: space-between;
+}
+.list .item .right .info{
+    margin-left: 18px;
+}
+.item .right .info .tit{
+    margin-top: 10px;
+    color: #333333;
+    font-size: 20px;
+
+}
+.item .right .info .connect{
+    margin-top: 10px;
+    color: #666666;
+    font-size: 14px;
+
+}
+.item .right .ri{
+    display: flex;
+    align-items: center;
+}
+.blue{
+    color: #0E76F5;
+}
+.hotel-order{
+    margin-top: 4%;
+    height: 561px;
+    background-color: #F8F8F8;
+    width:98.7%;
+    margin-bottom: 5%;
+    /* padding: 1%; */
+}
+.hotel-order .reservation-information{
+    height: 180px;
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+}
+.reservation-information .left{
+    width: 116px;
+    padding: 28px 0 0 13px; 
+    color: #333333;
+    font-size: 18px;
+    border-right: 1px solid #D8D8D8;
+}
+.reservation-information .right{
+    padding-left: 42px;
+}
+.reservation-information .right div{
+    display: flex;
+    line-height: 50px;
+}
+.reservation-information .right div .inf{
+    margin-left: 35px;
+}
+.reservation-information .count {
+    align-items: center;
+}
+.reservation-information .count .add{
+    display:inline-block;
+    background-color: #208DF7;
+    text-align: center;
+    width: 30px;
+    line-height: 33px;
+    color: #fff;
+    cursor:pointer;
+    
+}
+.reservation-information .count input{
+    height: 33px;
+    width: 100px;
+    text-align: center;
+}
+.reservation-information .count .reduce{
+    display:inline-block;
+    background-color: #208DF7;
+    text-align: center;
+    width: 30px;
+    color: #fff;
+    line-height: 33px;
+    cursor:pointer;
+}
+
+.hotel-order .occupancy-information{
+    height: 288px;
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.occupancy-information .left{
+    width: 116px;
+    padding: 28px 0 0 13px; 
+    color: #333333;
+    font-size: 18px;
+    border-right: 1px solid #D8D8D8;
+}
+.occupancy-information .right{
+    padding-left: 42px;
+}
+.occupancy-information .right div{
+    display: flex;
+    line-height: 56px;
+    position: relative;
+    width: 399px;
+    /* justify-content: space-around; */
+
+}
+.occupancy-information .right div .inf {
+    margin-left: 31px;
+    line-height: 50px;
+}
+.occupancy-information .right div .inf input{
+    height: 33px;
+    width: 300px;
+    margin-top: 15px;
+}
+.occupancy-information .right div .inf input{
+    height: 33px;
+    width: 300px;
+    margin-top: 15px;
+    text-align: center;
+}
+.occupancy-information .right div:last-child .inf input{
+    padding-right: 80px;
+}
+.occupancy-information .right div .inf .code{
+    position: absolute;
+    top: 15px;
+    height: 33px;
+    right: 0px;
+    width: 80px;
+    background-color: #DCDCDC;
+    line-height: 33px;
+    padding-left: 5px;
+}
+
+
+
+.home-video {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;/*这里是关键*/
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    /* background: url(../img/banner.jpg) no-repeat; */
+    /* background-size: cover; */
+}
+.tiaoguo{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.tiaoguo span{
+    /* background-color: #208DF7; */
+    color: #CCC;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+#homeVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.mask{
+    position: absolute;
+    width: 94.79%;
+    left: 2.6%;
+    background-color: #fff;
+    height: 60px;
+    bottom: 0px;
+    z-index: 22;
+}
+/* mp3 */
+
+#audio_btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    background-image: url('../img/music.png');
+    background-size: contain;
+}
+
+.rotate {
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite
+}
+
+@-webkit-keyframes rotating {
+    from { -webkit-transform: rotate(0) }
+    to { -webkit-transform: rotate(360deg) }
+}
+
+@keyframes rotating {
+    from { transform: rotate(0) }
+    to { transform: rotate(360deg) }
+}
+@-moz-keyframes rotating {
+    from { -moz-transform: rotate(0) }
+    to { -moz-transform: rotate(360deg) }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>内部交流</title>
+    <link rel="stylesheet" href="./lib/css/base.css">
+    <link rel="stylesheet" href="./lib/css/laydate.css">
+    <!-- <link rel="stylesheet" href="./lib/css/jquery.fullPage.css"> -->
+    <!-- <link rel="stylesheet" href="./lib/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/communionDetail.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    
+</head>
+<body>
+    <div class="communionDetail" style="background-image: url('./img/communion/background01.jpg')">
+        <div class="communionDetail-connect" >
+                    <div class="top">
+                         
+                                    <li >
+                                            OA协同
+                                    </li>
+                                    <li >
+                                            集团EP
+                                    </li>
+                                    <li >
+                                            费用报账
+                                    </li>
+                                    <li >
+                                            紫光档案
+                                    </li>
+                                    <li >
+                                            安防监控  
+                                    </li>
+                           
+                    </div>
+                    <div class="boottom">
+                                    <li >
+                                            生产管理系统           
+                                   </li>
+                                    <li >
+                                            早期预警
+                                            故障诊断系统 
+                                    </li>
+                                    <li>
+                                            燃料管理系统
+                                    </li>
+                                    <li>
+                                            厂级监控系统
+                                    </li>
+                    </div>
+        
+        </div>
+    </div>
+    <script src="./lib/js/jquery-1.8.3.min.js"></script>
+    <script src="./lib/js/laydate.js"></script>
+    <script src="./js/public.js"></script>
+    <!-- <script src="./lib/js/jquery.fullPage.min.js"></script> -->
+    <script>
+        $(function(){
+            $(".communionDetail").height($(window).height()) 
+            var width1 = $(".communionDetail-connect .top li").width()
+            $(".communionDetail-connect .top li").height(width1*0.910)
+             var width2 = $(".communionDetail-connect .boottom li").width()
+             $(".communionDetail-connect .boottom li").height(width2*0.688)
+        })
+    </script>
+</body>
+</html>

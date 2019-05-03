@@ -1,0 +1,116 @@
+.news{
+    margin: 0 auto;
+}
+.news-connect{
+    min-width: 1200px;
+    width: 83.33%;
+    margin: 0 auto;
+}
+.news .news-bg{
+    /* background-position: center;
+    background-size: cover; */
+    width: 100%;
+    height: auto;
+}
+.news-info .title{
+    margin-top: 65px;
+    /* justify-content: center; */
+    font-size: 25px;
+    line-height: 25px;
+    padding-bottom: 17px;
+    font-weight: 700;
+    color: #1A1A1A;
+    border-bottom: 1px solid #D1D1D1;
+    position: relative;
+}
+.news-info .title span{
+    color: #333333;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.news-list{
+    margin-bottom: 60px;
+}
+.news-list .item{
+    margin-top: 62px;
+    height: 180px;
+    display: flex;
+}
+.news-list .item:hover{
+    background:rgba(255,255,255,1);
+    box-shadow:0px 1px 29px 0px rgba(0, 0, 0, 0.08);
+}
+.news-list .item:hover .button{
+    display: block !important;
+}
+
+.news-list .item .left{
+    width: 412px;
+    height: 100%;
+}
+.news-list .item .left img{
+    width: 100%;
+    height: 100%;
+}
+.news-list .item .middle{
+    width: 180px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+.news-list .item .middle .day{
+    font-size: 65px;
+    color: #333333;
+}
+.news-list .item .middle .year-month{
+    font-size: 12px;
+    color: #666666;
+}
+.news-list .item .right{
+    width: 100%;
+}
+.news-list .item .right .titl{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+.news-list .item .right .connect{
+    font-size: #666666;
+    font-size: 14px;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+/*     text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp: 2;;
+    -webkit-box-orient:vertical; */
+}
+.news-list .item .right .button{
+    display: none;
+    width: 152px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #208DF7;
+    color: #fff;
+    font-size: 12px;
+}
+.news-list .item .right  .button a{
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+
+.hotred{
+    color: #C10605!important;
+}
+.hotred-bg{
+    background-color: #C10605!important;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+
+	<body>
+		<div class="am-g">
+			<div>
+				<!-- <div class="logo">
+        <img src="res/logo.jpg" style="height:70px;" />
+      </div> -->
+			</div>
+		</div>
+		<div class="am-g content login-page" v-show="isLogin">
+			<div class="textDiv">
+				<div class="logo">
+					<!-- <img src="res/logo.png"> -->
+				</div>
+				<!-- <h1 class="title">
+					(京能)锡林郭勒网站后台
+				</h1> -->
+			</div>
+			<div class="loginDiv" id="login">
+				<h4>门户网站后台</h4>
+				<div class="input-box">
+					<div class="am-u-sm-12">
+						<span class="left1 icon-span"></span>
+						<input type="text" class="am-form-field" name="loginname" id="loginname" placeholder="用户名" />
+					</div>
+					<div class="am-u-sm-12">
+						<span class="left2 icon-span"></span>
+						<input type="password" name="password" id="password" class="am-form-field keypad" placeholder="请输入密码" keypadMode="full"
+						allowKeyboard="true" value="" />
+					</div>
+					
+				</div>
+				<!-- <div style="text-align:right;padding-top: 10px;">
+					<a href='javascript:;' style="color:#fff;" id="register">用户注册</a>
+				</div> -->
+						
+				<div class="am-u-sm-12">
+					<button type="button" @click="loginClick" class="am-btn am-btn-warning login-btn">登录</button>
+				</div>
+			</div>
+		</div>
+		<script src="../lib/js/jquery.min.js"></script>
+		<script src="../lib/js/common.js"></script>
+		<script src="../lib/js/layer/layer.js"></script>
+		<script>
+			(function() {
+				const locations =this.window.location.origin
+				$('#register').on('click',()=>{
+					window.location.href  = locations +'/static/register/register.html'
+				})
+				var getUrlQueryStr = function(name) {
+					var querystring = window.location.search;
+					var param = {};
+					var kvs = null;
+					var kv = null;
+					
+					if (!querystring) return null;
+
+					querystring = querystring.replace(/^\?/, '');
+					kvs = querystring.split('&');
+
+					kvs.forEach(function(elem, index, arr) {
+						kv = elem.split('=');
+						param[kv[0]] = decodeURIComponent(kv[1]);
+					});
+
+					return (name ? param[name] : param);
+				};
+
+				$(document).keydown(function(event) {
+					if (event.keyCode === 13) {
+						getUserLoginInfo()
+					}
+				})
+
+				var invokLoginApi = function(userName, passWord) {
+					user = {
+						loginName: encodeURI(userName),
+						password: encodeURIComponent(passWord)
+					}
+					$.ajax({
+						type: 'POST',
+						url: CURRENCY_HOST + '/auth/user/login',
+						data: JSON.stringify({
+							"loginName": encodeURI(userName),
+							"password": encodeURIComponent(passWord)
+						}),
+						contentType: 'application/json',
+						success: function(result, text, request) {
+							sessionStorage.setItem('userToken', request.getResponseHeader('Authorization'))
+							var result = JSON.parse(result)
+							if (result.success) {
+								window.location.href = window.location.origin + "/#";
+							} else {
+								alert(result.msg);
+							}
+						}
+					});
+				};
+				var userAgent = window.navigator.userAgent
+				var isIE = 'ActiveXObject' in window
+				var isIE11 = userAgent.indexOf('Trident/7.0') > -1 && userAgent.indexOf('11.0') > -1
+				var isEdge = userAgent.indexOf("Edge") > -1
+				var isWinXP = userAgent.indexOf('Windows NT 5.1') > -1 || userAgent.indexOf('Windows Xp') > -1
+
+				if ((isIE && !isIE11) || isEdge) {
+					// layer.open({
+					//   type: 1,
+					//   title:false,
+					//   skin: 'layui-layer-rim', //加上边框
+					//   area: ['420px', '240px'], //宽高
+					//   content: '<p>您的浏览器版本太低，将不能使用此系统。</p><ul><li><img src="../lib/img/chrome-logo.svg" /></li><li><img src="../lib/img/ie.png" /></li></ul>'
+					// });
+					// if (window.confirm('您的浏览器版本太低，点击确定按钮下载可用浏览器。')) {
+					//   var href = 'http://www1.ghtd.com.cn:8888/upload/download/'
+					//   href += isWinXP ? '360se7.0.0.305.exe' : 'chrome.exe'
+					//   window.location.href = href
+					// } else {
+					//   window.close()
+					// }
+					layer.open({
+						type: 1,
+						title: false,
+						skin: 'layui-layer-rim', //加上边框
+						area: ['600px', '420px'], //宽高
+						content: '<p class="layer-msg">您的浏览器版本太低，将不能使用此系统。</p><ul class="browser-list"><li class="layer-mg"><a href="http://10.2.86.27/download/chrome.ext.7z" target="_blank">' +
+							'<img src="../lib/img/chrome-logo.svg" /><p>下载chrome浏览器</p></a></li><li><a href="http://10.2.86.27/download/ie11_wishdown.zip" target="_blank"><img src="../lib/img/ie.png" /><p>升级IE浏览器</p></a></li></ul>'
+					});
+				}
+
+
+				$('.login-btn').on('click', function() {
+					getUserLoginInfo();
+				});
+
+				function getUserLoginInfo() {
+					var userName = $('#loginname').val();
+					var passWord = $('#password').val();
+
+					if (!userName) return alert('请输入登陆账号！');
+					if (!passWord) return alert('请输入登陆密码！');
+
+					invokLoginApi(userName, passWord);
+				}
+
+				var urlUserName = getUrlQueryStr('userName');
+				if (urlUserName) invokLoginApi(urlUserName, 1);
+
+			}());
+		</script>
+	</body>
+
+</html>

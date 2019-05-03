@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻详情</title>
+    <link rel="stylesheet" href="../lib/css/base.css">
+    <!-- <link rel="stylesheet" href="./lib/css/jquery.fullPage.css"> -->
+    <link rel="stylesheet" href="../css/newsdetail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <style>
+        .newsdetail-connect .connect div img{
+            width: 100%;
+            height:450px;
+        }
+        .newsdetail-info .connect div{
+            text-align: center;
+            margin: 15px 100px 20px 100px;
+        }
+        .newsdetail-info .connect p{
+            color: #666666;
+            font-size: 16px;
+            text-indent: 2em;
+            letter-spacing: 2px;
+            margin: 5px 100px 0px 100px;
+        }
+        .newsdetail-info .connect h3{
+            margin: 5px 100px 0px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="newsdetail">
+            <div class="newsdetail-bg" style="background-image: url('../img/top_balan.jpg')">
+                   <!-- 背景 -->
+            </div>
+            <div class="newsdetail-connect">
+                    <div class="newsdetail-info">
+                            <div class="title">
+                                    <h2> 京能集团召开2018年战略发展研讨会</h2>
+                                    <div class="auteh">
+                                        <span>
+                                                文：白桦树2008
+                                        </span>
+                                        <span>
+                                                发布时间：2018-12-23
+                                        </span>
+                                    </div>
+                            </div>
+                            <div class="connect">
+                                <div>
+                                        <img src="../img/newlist04.png" alt="" style="height: 550px;">
+                                </div>
+                                <p>
+                                        12月7日，京能集团召开2018年战略发展研讨会。京能集团领导班子全体成员出席会议，集团董事会秘书、总经理助理、总部各部室、工会及团委负责人，所属平台公司和部分控股企业的董事长、总经理共80余人参加会议。会议由集团党委副书记、总经理阚兴同志主持。  
+                                </p>
+                           </div>
+                </div>
+            </div>
+    </div>
+    <script src="../lib/js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common_detail.js"></script>
+    <!-- <script src="./lib/js/jquery.fullPage.min.js"></script> -->
+    <script>
+        $(function(){
+           var width = $(".newsdetail .newsdetail-bg").width()
+           $(".newsdetail .newsdetail-bg").height(width*0.312)
+        })
+    </script>
+</body>
+</html>

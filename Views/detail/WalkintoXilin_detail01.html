@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻详情</title>
+    <link rel="stylesheet" href="../lib/css/base.css">
+    <!-- <link rel="stylesheet" href="./lib/css/jquery.fullPage.css"> -->
+    <link rel="stylesheet" href="../css/newsdetail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <style>
+        .newsdetail-connect .connect div img{
+            width: 100%;
+            height:450px;
+        }
+        .newsdetail-info .connect div{
+            text-align: center;
+            margin: 15px 100px 20px 100px;
+        }
+        .newsdetail-info .connect p{
+            color: #666666;
+            font-size: 16px;
+            text-indent: 2em;
+            letter-spacing: 2px;
+            margin: 5px 100px 0px 100px;
+        }
+        .newsdetail-info .connect h3{
+            margin: 5px 100px 0px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="newsdetail">
+            <div class="newsdetail-bg" style="background-image: url('../img/top_balan.jpg')">
+                   <!-- 背景 -->
+            </div>
+            <div class="newsdetail-connect">
+                    <div class="newsdetail-info">
+                            <div class="title">
+                                    <h2>京能(锡林郭勒)发电有限公司简介</h2>
+                                    <div class="auteh">
+                                        <span>
+                                                文：白桦树2008
+                                        </span>
+                                        <span>
+                                                发布时间：2018-12-23
+                                        </span>
+                                    </div>
+                            </div>
+                            <div class="connect">
+                                <div>
+                                        <img src="../img/walk01.png" alt="" style="height:600px;">
+                                </div>
+                                <p>
+                                    2015年4月京能（锡林郭勒）发电有限公司成立， 一期工程2×660MW超超临界褐煤间接空冷机组工程是锡盟首条1000kv交流特高压输电线路配套的清洁发电项目。该线路及配套电源项目作为国家能源结构调整和大气环境污染治理行动的重大举措，该线路也是锡盟首条接入北京的特高压送电线路。工程总投资约57.47亿元，由北京京能电力股份有限公司和华润电力投资有限公司分别按70%和30%股比投资建设。
+                                </p>
+                                <p>
+                                    搭建综合管理部 、党群工作部 、财务管理部、计划物资部 、市场营销部、生产技术部 、工程管理部、安全质监部 、设备管理
+                                </p>
+                                <p>
+                                    发电运行部共十个部门。现有员工162人（毕业生61人）,分别来自内蒙古、北京、天津、河北、山西、宁夏、辽宁、吉林等地，集团系统内调入30人。其中高管4人，中层管理人员16人，一般员工81人，学员41人。
+                                </p>
+                                <p>
+                                    在集团党委、京能电力的带领下，深入学习贯彻党的十九大精神；落实北京市委、市政府和市国资委有关决策部署，自觉践行“创新、协调、绿色、开放、共享”发展理念；落实集团“稳中求进、防控风险、强化融合、创新发展”的工作方针；落实“五精”管理，创建“三基九力”团队。
+                                </p>
+                           </div>
+                </div>
+            </div>
+    </div>
+    <script src="../lib/js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common_detail.js"></script>
+    <!-- <script src="./lib/js/jquery.fullPage.min.js"></script> -->
+    <script>
+        $(function(){
+           var width = $(".newsdetail .newsdetail-bg").width()
+           $(".newsdetail .newsdetail-bg").height(width*0.312)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/register.css">
+	</head>
+
+	<body>
+		<div class="am-g">
+			<div>
+				<!-- <div class="logo">
+        <img src="res/logo.jpg" style="height:70px;" />
+      </div> -->
+			</div>
+		</div>
+		<div class="am-g content login-page" v-show="isLogin">
+			<div class="textDiv">
+				<div class="logo"><img src="res/logo.png"><h3>神华四川天明电厂缺陷管理</h3></div>
+				<h1 class="title">
+					
+				</h1>
+			</div>
+			<div class="loginDiv" id="login">
+				<h4>用户注册</h4>
+				<div class="input-box">
+					<div class="am-u-sm-12">
+						<span class="left1 "></span>
+						<input type="text" class="am-form-field"  name="loginname" id="loginname" placeholder="请输入注册账号" />
+					</div>
+					<div class="am-u-sm-12">
+						<span class="left2 "></span>
+						<input type="text" name="password" id="password" class="am-form-field keypad" placeholder="请输入注册密码" keypadMode="full"
+						allowKeyboard="true" value="" />
+					</div>
+					<div class="am-u-sm-12">
+						<span class="left3 "></span>
+						<input type="text" name="username" id="username" class="am-form-field keypad" placeholder="请输入注册名称" keypadMode="full"
+						allowKeyboard="true" value="" />
+					</div>
+					<div class="am-u-sm-12">
+						<span class="left4 "></span>
+						<input type="text" name="email" id="email" class="am-form-field keypad" placeholder="请输入注册邮箱" keypadMode="full"
+						allowKeyboard="true" value="" />
+					</div>
+					<div class="am-u-sm-12">
+						<span class="left4 "></span>
+						<input type="text" name="phone" id="phone"  class="am-form-field keypad" placeholder="请输入注册手机号码" keypadMode="full"
+						allowKeyboard="true" value="" />
+					</div>
+				</div>
+				<div class="am-u-sm-12">
+					<button type="button" @click="loginClick" class="am-btn am-btn-warning login-btn">注册</button>
+				</div>
+				<div class="am-u-sm-12" style="margin-top: 10px;">
+					<a href="javascript:;" style="color:#fff;padding-top: 5px;" onClick="javascript :history.back(-1);"><<返回</a> 
+				</div>
+			</div>
+		</div>
+		<script src="../lib/js/jquery.min.js"></script>
+		<script src="../lib/js/common.js"></script>
+		<script src="../lib/js/layer/layer.js"></script>
+		<script>
+			(function() {
+				var getUrlQueryStr = function(name) {
+					var querystring = window.location.search;
+					var param = {};
+					var kvs = null;
+					var kv = null;
+
+					if (!querystring) return null;
+					querystring = querystring.replace(/^\?/, '');
+					kvs = querystring.split('&');
+
+					kvs.forEach(function(elem, index, arr) {
+						kv = elem.split('=');
+						param[kv[0]] = decodeURIComponent(kv[1]);
+					});
+					return (name ? param[name] : param);
+				};
+
+				$(document).keydown(function(event) {
+					if (event.keyCode === 13) {
+						getUserLoginInfo()
+					}
+				})
+				var invokLoginApi = function(...param) {
+					const locations =this.window.location.origin
+					$.ajax({
+						type: 'POST',
+						url: CURRENCY_HOST + '/auth/user/register',
+						data: JSON.stringify({
+							"loginName": encodeURI(param[0]),
+							"password": encodeURIComponent(param[1]),
+							"nickName":param[2],
+							"isadmin":0,
+							"id":'',
+							"imagepath":'',
+							"email":param[3],
+							"phone":param[4],
+							"status":0
+						}),
+						contentType: 'application/json',
+						success: function(result, text, request) {
+							var result = JSON.parse(result)
+							if (result.success) {
+								window.location.href = locations +'/static/login/login.html'
+							} else {
+								alert(result.msg);
+							}
+						}
+					});
+				};
+				$('.login-btn').on('click', function() {
+					getUserLoginInfo();
+				});
+				function getUserLoginInfo() {
+					var userName = $('#loginname').val();
+					var passWord = $('#password').val();
+					var name = $('#username').val();
+					var email = $('#email').val();
+					var phone = $('#phone').val();
+					if (!userName) return alert('请输入账号！');
+					if (!passWord) return alert('请输入密码！');
+					if (!name) return alert('请输入姓名！');
+					if (!email) return alert('请输入邮箱！');
+					if (!/\S+@\w+\.\w+/.test(email)) return alert('邮箱格式错误');
+					if (!phone) return alert('请输入电话号码！');
+					if (!/1[34578]\d{9}/.test(phone)) return alert('电话号码格式错误！');
+
+					invokLoginApi(userName, passWord,name,email,phone);
+				}
+
+				// var urlUserName = getUrlQueryStr('userName');
+				// if (urlUserName) invokLoginApi(urlUserName, 1);
+
+			}());
+		</script>
+	</body>
+
+</html>

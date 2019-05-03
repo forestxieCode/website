@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>内部交流</title>
+    <link rel="stylesheet" href="./lib/css/base.css">
+    <link rel="stylesheet" href="./lib/css/laydate.css">
+    <!-- <link rel="stylesheet" href="./lib/css/jquery.fullPage.css"> -->
+    <!-- <link rel="stylesheet" href="./lib/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/communionDetail_test.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/css/calender.css">
+    <style>
+            	#demo {
+                        width: 84%;
+                        margin: 4% auto;
+                        /* width: 380px;
+                        margin: 150px auto; */
+                }
+                #dt {
+
+                }
+                .calendar-hd{
+                        height: 92px;  
+                }
+    
+    </style>
+</head>
+<body>
+    <div class="communionDetail">
+        <header>
+                <div class="logo">
+                        <a href="./index.html" style="display:inherit;">
+                                <img src="./img/logo.jpg" alt="">
+                        </a>
+                </div>
+                <div class="banlan">
+                                <!-- <li>
+                                        <a href="#">
+                                                <div class="button_" id='OA'>
+                                                        OA待办   
+                                                 <span class="circle">8</span> 
+                                                </div>
+                                                
+                                         </a>
+                                </li> -->
+                                <!-- <li>
+                                        <a href="#">
+                                                <div class="button_">
+                                                BFS待办  
+                                                <span class="circle">8</span>  
+                                                </div>
+                                                
+                                        </a>
+                                </li> -->
+                                <li>
+                                        <a href="#">
+                                                        <div >
+                                                                安全生产:
+                                                         </div>
+                                                        <div style="color:#5796FF">
+                                                                        50
+                                                        </div>
+                                                        天
+                                        </a>  
+                                </li>
+                                <li>
+                                        <a href="#">
+                                                <div >
+                                                        访问次数：
+                                                </div>
+                                                <div  style="color:#5796FF" id="getcount" >
+                                                                50
+                                                </div>
+                                                次     
+                                        </a>         
+                                </li>
+                                <li>
+                                        <a href="#">
+                                                <div >
+                                                        在线人数：
+                                                </div>
+                                                <div  style="color:#5796FF" id="online">
+                                                        36
+                                                </div>
+                                                人  
+                                        </a>        
+                                                   
+                                </li>
+                                <li>
+                                        <div style="display: flex;width: 100%;
+                                        justify-content: flex-end;">
+                                                        <div class="user">
+                                                                        <img src="./img/gly.png" alt="">
+                                                                        <span></span>               
+                                                                        </div>
+                                                        <div class="buu">
+                                                                                <a href="javascript:;" id="loginOut">
+                                                                                        退出登入
+                                                                        </a>
+                                                         </div> 
+                                        </div>
+                                       
+                                </li>
+                 </div>
+                <div class="login-info">
+                        <!-- <div class="user">
+                                <img src="./img/gly.png" alt="">
+                                admin 
+                        </div>
+                        <div class="buu">
+                                <a href="./communion.html">
+                                退出登入
+                                </a>
+                        </div> -->
+                </div>
+        </header>
+        <div class="lin"></div>
+
+        <div class="communionDetail-connect">
+                <div class="item1">
+                                <h3>OA待办事项清单</h3>
+                                <div style="width:100%;height: 85%;;padding-left: 2%;padding-right:2%;padding-top: 20px;">
+                                        <iframe src="./test.html" frameborder="0" scrolling="auto" width="100%" height="100%" name="toOA" id="toOA"></iframe>
+                                                <!-- <div id="main" style="width:600px;height:300px;"></div>
+                                                        <div class="inf" style="display: flex;
+                                                        justify-content: space-between;">
+                                                                        <div>
+                                                                               总装机容量:13200.31kW
+                                                                        </div>
+                                                                        <div>
+                                                                                当年故障停机: <span style="color:red;">0</span>次
+                                                                        </div>
+                                                      </div> -->
+                                </div>
+
+                </div>
+                <div class="item2">
+                                <h3>BFS待办事项清单
+                                    <div>
+                                                <span id="bfs_left"><<</span>
+                                                <span id="bfs_right">>></span>
+                                    </div>
+                                       
+                                </h3>
+                                <div style="width:100%;height: 85%;;padding-left: 2%;padding-top: 20px; position: relative;overflow: hidden;display: flex;" id="bef_contaier">
+                                        <div class="ifram" >
+                                                <iframe src="./test.html" frameborder="0" scrolling="auto" width="95%" height="100%"  id="toBFS"></iframe>
+                                        </div>
+                                        <!-- <div class="ifram" >
+                                                        <iframe src="./test.html" frameborder="0" scrolling="auto" width="95%" height="100%"  id="toBFS"></iframe>
+                                        </div> -->
+                                       
+                                        <!-- <iframe src="./test.html" frameborder="0" scrolling="auto" width="100%" height="100%" name="toOA"></iframe> -->
+                                </div>
+                </div>
+                <div class="item3">
+                                <h3>生产指数</h3>
+                                <div style="margin-top: 19px;margin-left: 29px;width: 94%;height: 75%;overflow: hidden;">
+                                        <table width="100%" height="90%" cellspacing="0"  cellpadding="0" ellspacing="0">
+                                                <tr>
+                                                        <th>名称</th>
+                                                        <th >1号机组</th>
+                                                        <th>2号机组</th>
+                                               
+                                                </tr>
+                                                <tr>
+                                                        <td>机组负荷</td>
+                                                        <td data-name="W3.UNIT1.LDC_MW">1</td>
+                                                        <td data-name="W3.UNIT2.LDC_MW">1</td>
+                                                        
+                                                </tr>
+                                                <tr>
+                                                        <td>主汽压力</td>
+                                                        <td data-name="W3.SCZB.U1_LCZQYL">1</td>
+                                                        <td data-name="W3.SCZB.U2_LCZQYL">1</td>
+                                                        
+                                                </tr>
+                                                <tr>
+                                                        <td>主汽温度</td>
+                                                        <td data-name="W3.SCZB.U1_LCZQWD">1</td>
+                                                        <td data-name="W3.SCZB.U2_LCZQWD">1</td>
+                                                      
+                                                </tr>
+                                                <tr>
+                                                        <td>再热汽压力</td>
+                                                        <td data-name="W3.SCZB.U1_LCZRQYL">1</td>
+                                                        <td data-name="W3.SCZB.U2_LCZRQYL">1</td>
+                                                     
+                                                </tr>
+                                                <tr>
+                                                        <td>再热汽温度</td>
+                                                        <td data-name="W3.SCZB.U1_LCZRQWD">1</td>
+                                                        <td data-name="W3.SCZB.U2_LCZRQWD">0</td>
+                                                       
+                                                </tr>
+                                                <tr>
+                                                        <td>发电燃煤量</td>
+                                                        <td data-name="W3.UNIT1.TOTAL_FUEL_FLW">0</td>
+                                                        <td data-name="W3.UNIT2.TOTAL_FUEL_FLW">0</td>
+                                                        
+                                                </tr>
+                                                <tr>
+                                                        <td>氮氧化物含量</td>
+                                                        <td data-name="W3.UNIT1.10CEMS02CQ102_COR">0</td>
+                                                        <td data-name="W3.UNIT2.20CEMS02CQ102">0</td>
+                                                       
+                                                </tr>
+                                                <tr>
+                                                        <td>二氧化硫含量</td>
+                                                        <td data-name="W3.UNIT1.10CEMS02CQ101">0</td>
+                                                        <td data-name="W3.UNIT2.20CEMS02CQ101">0</td>
+                                                        
+                                                </tr>
+                                                <tr>
+                                                        <td>烟尘含量</td>
+                                                        <td data-name="W3.UNIT1.10CEMS02CQ105">0</td>
+                                                        <td data-name="W3.UNIT2.20CEMS02CQ105">0</td>
+                                                       
+                                                </tr>
+                                        </table>
+                                        <!-- <img src="./img/giry.png" alt="" style="width: 100%;height: 90%;"> -->
+                                </div>
+                </div>
+                <div class="item4">
+                        <h3>内部系统</h3>
+                                <div 
+                                id="container"
+                                style="height:70%; 
+                                position: relative;
+                                overflow: hidden;
+                                "
+                                >
+                                        <!-- <div class="menue">
+                                                          <li> 
+                                                                <img src="./img/icon.jpg" alt="">
+                                                                     OA协同
+                                                                </li>
+                                                                <li> <img src="./img/icon.jpg" alt="">
+                                                                    生产管理系统
+                                                                </li>
+                                                                <li> <img src="./img/icon.jpg" alt="">
+                                                                                SIS
+                                                                </li>
+                                                                <li> <img src="./img/icon.jpg" alt="">
+                                                                                能源管控与技术<br/>
+                                                                                &nbsp;监督管理平台
+                                                                </li>
+                                                                <li> <img src="./img/icon.jpg" alt="">
+                                                                                集团EP
+                                                                </li>
+                                                                <li> <img src="./img/icon.jpg" alt="">
+                                                                                费用报销
+                                                                </li>
+                                                                 <li> <img src="./img/icon.jpg" alt="">
+                                                                                早期预警系统
+                                                                </li>
+                                                                <li> <img src="./img/icon.jpg" alt="">
+                                                                                燃料管理系统
+                                                                </li>
+                                                                 <li> <img src="./img/icon.jpg" alt="">
+                                                                                紫光档案
+                                                                </li>
+                                                
+                                                </div> -->
+                                                
+                                </div>      
+                        <div class="point">
+                                <span id="left"><</span>
+                                <span id="right">></span>
+                        </div>
+                </div>
+                <!-- <div class="left">
+
+                </div>
+                <div class="right">
+
+                </div> -->
+
+              <!-- <div class="top">
+                 <li>
+                     <div class="left">OA待办</div>
+                     <div class="right">8</div>      
+                 </li>
+                 <li>
+                        <div class="left">BFS待办</div>
+                        <div class="right">8</div>   
+                 </li>
+                 <li>
+                        <div class="left">安全生产</div>
+                        <div class="right">50 <span style="font-size:16px;margin-left: 5px;
+                                margin-top: 17px;">天</span> </div>   
+                </li>
+                <li>
+                        <div class="left">访问次数</div>
+                        <div class="right">50<span style="font-size:16px;margin-left: 5px;
+                                margin-top: 17px;">次</span></div>   
+                </li>
+                <li>
+                        <div class="left">在线人数</div>
+                        <div class="right">50<span style="font-size:16px;margin-left: 5px;
+                                margin-top: 17px;">人</span></div>   
+                </li>
+
+              </div>
+              <div class="middle">
+                      <div style="width:50%;height: 100%;padding-left: 4%;padding-top: 20px;">
+                                <div id="main" style="width: 600px;height:400px;">
+                                        </div>
+                                        <div class="inf">
+                                                        <div>
+                                                               总装机容量:13200.31kW
+                                                        </div>
+                                                        <div>
+                                                                当年故障停机: <span style="color:red;">0</span>次
+                                                        </div>
+                                      </div>
+                      </div>
+                      <div style="margin-top: 20px; width: 50%;overflow: hidden;">
+                              <img src="./img/giry.png" alt="">
+                      </div>
+                      
+              </div>
+              <div class="bottom">
+                <div class="calendar">
+                        <div id="demo">
+                                <div id="ca"></div>
+                        </div> 
+                </div>
+            
+                <div class="menue">
+                        <h3>内部系统</h3>
+                        <li>OA协同</li>
+                        <li>集团EP</li>
+                        <li>费用报账</li>
+                        <li>紫光档案</li>
+                        <li>安防监控</li>
+                        <li>生产管理系统</li>
+                        <li>故障 诊断系统</li>
+                        <li>燃料 管理系统</li>
+                        <li>厂级 监控系统</li>
+                </div>
+              </div> -->
+        </div>
+    </div>
+    <script src="./lib/js/jquery-1.8.3.min.js"></script>
+    <script src="./lib/js/laydate.js"></script>
+    <script src="./lib/js/echarts.min.js"></script>
+    <script src="./lib/js/calendar.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./lib/js/com.ygsoft.ecp.utilities.des.js"></script>
+
+    <!-- <script src="./lib/js/jquery.fullPage.min.js"></script> -->
+    <script>
+        //关闭页面调用退出方法
+        // window.onbeforeunload = function (e) {
+        //         var message = 'some word';
+        //         e = e || window.event;
+        //         if (e) {
+        //                 $.ajax({
+        //                         headers: {
+        //                              "Authorization": sessionStorage.getItem('userToken')
+        //                         },
+        //                         type: 'get',
+        //                         url: CURRENCY_HOST + '/auth/user/quit',
+        //                         contentType: 'application/json',
+        //                         success: function(result, text, request) {
+        //                         var result = JSON.parse(result)
+        //                         if (result.success) {
+        //                                 // window.location.href = window.location.origin + "/communion.html";
+        //                                 sessionStorage.removeItem('userToken')
+        //                                         // setSystemId(result.data)
+        //                         } else {
+        //                                         alert(result.msg);
+        //                                 }
+        //                         }
+        //                 })
+        //                 e.returnValue = message;
+        //         }
+        //         return message;
+        // };
+        // $('#ca').calendar({
+        // width: 580,
+        // height: $('.item2').height()-120,
+        // data: [
+        //     {
+        //         date: '2019/12/24',
+        //         value: 'Christmas Eve'
+        //     },
+        //     {
+        //         date: '2019/12/25',
+        //         value: 'Merry Christmas'
+        //     },
+        //     {
+        //         date: '2019/01/01',
+        //         value: 'Happy New Year'
+        //     }
+        // ],
+        // onSelected: function (view, date, data) {
+        //     console.log('view:' + view)
+        //     console.log('data:' + (data || 'None'));
+        //  }
+        // });
+
+        // $('#dd').calendar({
+        //         trigger: '#dt',
+        //         zIndex: 999,
+        //         format: 'yyyy-mm-dd',
+        //         onSelected: function (view, date, data) {
+        //         console.log('event: onSelected')
+        //         },
+        //         onClose: function (view, date, data) {
+        //         console.log('event: onClose')
+        //         console.log('view:' + view)
+        //         console.log('date:' + date)
+        //         console.log('data:' + (data || 'None'));
+        //         }
+        // });
+
+        function getunit(){
+                return {
+                        'W3.UNIT1.LDC_MW':'MW',
+                        'W3.UNIT2.LDC_MW':'MW',
+                        'W3.SCZB.U1_LCZQYL':'MPa',
+                        'W3.SCZB.U2_LCZQYL':'MPa',
+                        'W3.SCZB.U1_LCZQWD':'℃',
+                        'W3.SCZB.U2_LCZQWD':'℃',
+                        'W3.SCZB.U1_LCZRQYL':'MPa',
+                        'W3.SCZB.U2_LCZRQYL':'MPa',
+                        'W3.SCZB.U1_LCZRQWD':'℃',
+                        'W3.SCZB.U2_LCZRQWD':'℃',
+                        'W3.UNIT1.TOTAL_FUEL_FLW':'t/h',
+                        'W3.UNIT2.TOTAL_FUEL_FLW':'t/h',
+                        'W3.UNIT1.10CEMS02CQ102_COR':'mg/m3',
+                        'W3.UNIT2.20CEMS02CQ102':'mg/m3',
+                        'W3.UNIT1.10CEMS02CQ101':'mg/m3',
+                        'W3.UNIT2.20CEMS02CQ101':'mg/m3',
+                        'W3.UNIT1.10CEMS02CQ105':'mg/m3',
+                        'W3.UNIT2.20CEMS02CQ105':'mg/m3'
+                }
+        }
+
+        $(function(){
+               // var width = $('.menue').width()
+               $('#OA').on('click',function(){
+                    ListClikfun(1,$(this))  
+               })
+
+                var toke  = sessionStorage.getItem('userToken')
+                if(!toke){
+                    window.location.href = window.location.origin + "/communion.html";
+                }
+                $('#bfs_right').hide()
+                $('#bfs_left').hide()  
+                $('#loginOut').on('click',function(){
+                        $.ajax({
+                                headers: {
+                                     "Authorization": sessionStorage.getItem('userToken')
+                                },
+                                type: 'get',
+                                url: CURRENCY_HOST + '/auth/user/quit',
+                                contentType: 'application/json',
+                                success: function(result, text, request) {
+                                var result = JSON.parse(result)
+                                if (result.success) {
+                                        window.location.href = window.location.origin + "/communion.html";
+                                        sessionStorage.removeItem('userToken')
+                                } else {
+                                                alert(result.msg);
+                                        }
+                                }
+                        })  
+                })
+                
+                $('#left').on('click',function(){
+                        var value2 = parseInt($($('#container').children()[0]).css('right'))
+                        if(value2>-38){
+                                leftmove()
+                        }
+                })
+
+                $('#right').on('click',function(){
+                        var index = $('#container').children().length-1;
+                        var dom = $('#container').children();
+                        var value = parseInt($(dom[index]).css('right'))
+                        if(value<-38){
+                                rightmove()
+                        }
+                })
+
+                $('#bfs_left').on('click',function(){
+                        var value2 = parseInt($($('#bef_contaier').children()[0]).css('right'))
+                        if(value2>-38){
+                                leftmove_() 
+                               
+                              
+                        }
+                })
+
+                $('#bfs_right').on('click',function(){
+                        var index = $('#bef_contaier').children().length-1;
+                        var dom = $('#bef_contaier').children();
+                        var value = parseInt($(dom[index]).css('right'))
+                        if(value<-38){
+                                rightmove_() 
+                        }
+                })
+                
+                setTimeout(function(){
+                        $('#container .menue li').on('click',function(){
+                           var remark = $(this).attr("remark")
+                           var value = $(this).attr("value")
+                           if(remark==0){
+                                var url_ = $(this).attr("url")
+                                var a = $("<a href="+url_+" target='_blank'>Apple</a>").get(0);
+                                var e = document.createEvent('MouseEvents');
+                                e.initEvent('click', true, true);
+                                a.dispatchEvent(e);
+                           }else {
+                                ListClikfun(value,$(this))    
+                           }
+                       })
+                },500)
+        })
+        // 请求系统列表数据
+        function getlist(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + '/auth/project/getProjects',
+			contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                setSystemId(result.data)
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })
+        }
+
+        function leftmove(){
+                var width = $('.menue').width()
+                var nodes = $('#container')
+                for(var i=0;i<nodes.children().length;i++){
+                     var curenwidth = parseInt($($('#container').children()[i]).css('right'))
+                     var countwidht = curenwidth - width
+                     $("#container .menue:nth-child("+(i+1)+")").animate({right:countwidht});
+                }
+        }
+        function rightmove(){
+                var width = $('.menue').width()
+                var nodes = $('#container')
+                for(var i=0;i<nodes.children().length;i++){
+                     var curenwidth = parseInt($($('#container').children()[i]).css('right'))
+                     var countwidht = curenwidth + width
+                     $("#container .menue:nth-child("+(i+1)+")").animate({right:countwidht});
+                }
+                
+        }
+        function leftmove_(){
+                var width = $('.ifram').width()
+                var nodes = $('#bef_contaier')
+                for(var i=0;i<nodes.children().length;i++){
+                     var curenwidth = parseInt($($('#bef_contaier').children()[i]).css('right'))
+                     var countwidht = curenwidth - width
+                     $("#bef_contaier .ifram:nth-child("+(i+1)+")").animate({right:countwidht});
+                }
+        }
+        function rightmove_(){
+                var width = $('.ifram').width()
+                var nodes = $('#bef_contaier')
+                for(var i=0;i<nodes.children().length;i++){
+                     var curenwidth = parseInt($($('#bef_contaier').children()[i]).css('right'))
+                     var countwidht = curenwidth + width
+                     $("#bef_contaier .ifram:nth-child("+(i+1)+")").animate({right:countwidht});
+                }
+                
+        }
+
+        function initremoveSystem(){
+                var width = $('.menue').width()
+                var nodes = $('#container')
+                // console.log(nodes.children().length)
+                $("#container .menue:nth-child("+(1)+")").css({right:-38});  
+                for(var i=1;i<nodes.children().length;i++){
+                     $("#container .menue:nth-child("+(i+1)+")").css({right:-width*i-38});   
+                }
+        }
+        function initremoveSystem_(){
+                var width = $('.item2 .ifram').width()
+                var nodes = $('#bef_contaier')
+                // console.log(nodes.children().length)
+                $(".item2 .ifram:nth-child("+(1)+")").css({right:-38});  
+                for(var i=1;i<nodes.children().length;i++){
+                     $(".item2 .ifram:nth-child("+(i+1)+")").css({right:-width*i-38});   
+                }
+        }
+        // 获取OA代办
+        function getTodo(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/project/getTodo?userid=&projectid=1",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                $('.communionDetail header .banlan li:nth-child(1) a .button_ .circle').text(result.data)
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })
+        }
+       // 访问次数
+        function getCount(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/website/getCount",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                $('#getcount').text(result.data.count)
+                                
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })
+        }
+         // 获取在线人数
+        function getOnlineCount(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/website/getOnlineCount",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                $('#online').text(result.data)
+                                
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })
+        }
+
+
+        // 渲染系统列表
+        function setSystemId(data){
+                var nodes = $('#container')
+                var buffleght = data.length;
+                for(var i=0;i<=(buffleght/9);i++){
+                        var htmlstr = "<div class='menue' value="+(i+1)+"></div>"
+                        var html = $(htmlstr)
+                        for(var j=i*9;j<(i+1)*9&&j<buffleght;j++){
+                            if(data[j].remark==0){
+                                html.append("<li value="+data[j].id+" remark="+parseInt(data[j].remark)+" url="+data[j].url+"><img src='./img/icon.jpg'></img>"+data[j].name+"</li>")
+                            }else {
+                                
+                                html.append("<li value="+data[j].id+" remark="+parseInt(data[j].remark)+"><img src='./img/icon.jpg'></img>"+data[j].name+"</li>")   
+                            }
+                        }
+                        nodes.append(html)  
+                }
+                initremoveSystem()
+                
+        }
+        // 获取用户信息
+        function getUser(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/user/getUser/",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                $('header .banlan li .user span').text(result.data.name)
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })
+        }
+
+        function getQueryString(url,name) {
+            var result = url.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+            if (result == null || result.length < 1) {
+                return "";
+            }
+            return result[1];
+        }
+
+        function ListClikfun(id,event){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + '/auth/project/jumpTo',
+                        contentType: 'application/json',
+                        data: {
+				"userid": '',
+				"projectid": id
+                        },
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                // 以新的标签页打开
+                                var url = result.data
+                                if(id==7){
+                                        var username = getQueryString(url,"username");
+                                        var password = getQueryString(url,"password");
+                                        var new_username = $.des.ENCRYSTRING_HEAD+$.des.doEncrypt(username,$.des.ENCRY_FIRST_KEY, $.des.ENCRY_SECOND_KEY, $.des.ENCRY_THIRD_KEY);
+                                        var new_password = $.des.ENCRYSTRING_HEAD+$.des.doEncrypt(password,$.des.ENCRY_FIRST_KEY, $.des.ENCRY_SECOND_KEY, $.des.ENCRY_THIRD_KEY);
+                                        url=url.replace(username,new_username)
+                                        url=url.replace(password,new_username)
+                                }
+
+                                var a = $("<a href="+url+" target='_blank'>Apple</a>").get(0);
+                                var e = document.createEvent('MouseEvents');
+                                e.initEvent('click', true, true);
+                                a.dispatchEvent(e);
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+              })
+        }
+        // 获得机子的数据
+        function getSCZB(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/project/getSCZB",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                var data = result.data
+                                var tr  = $('.item3 table tr td')
+                                for(var i=0;i<tr.length;i++){
+                                        if($(tr[i]).attr('data-name')){
+                                        $(tr[i]).text(data[$(tr[i]).attr('data-name')]+' '+getunit()[$(tr[i]).attr('data-name')])
+                                 }  
+                                }
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })   
+        }
+        // 获取OA代办的网站
+        function getOA(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/project/getTodoList?projectid=1",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                var data = result.data
+                                $('#toOA')[0].src=data    
+                                      
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })     
+        }
+        function getOA2(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/project/getBfsTodoList?projectid=2",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                var data = result.data 
+                                $('#toBFS')[0].src=data
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            })     
+        }
+        
+        function getUserBfsByUserId(){
+                $.ajax({
+                        headers: {
+                                "Authorization": sessionStorage.getItem('userToken')
+                        },
+			type: 'get',
+			url: CURRENCY_HOST + "/auth/project/getUserBfsByUserId",
+                        contentType: 'application/json',
+			success: function(result, text, request) {
+			var result = JSON.parse(result)
+			if (result.success) {
+                                var data = result.data 
+                                if(data.length>0){
+                                        $('#bfs_right').show()
+                                        $('#bfs_left').show()
+                                        for(var i=0;i<data.length;i++){
+                                                $('#bef_contaier').append(["<div class=\"ifram\" ><iframe src=\""+data[0].bfsInfo.url+"\" frameborder=\"0\" scrolling=\"auto\" width=\"95%\" height=\"100%\"  id=\"toBFS\"></iframe></div>"].join(""))
+                                         }
+                                }else {
+                                        $('#bfs_right').hide()
+                                        $('#bfs_left').hide()  
+                                }
+                                initremoveSystem_()
+                                // console.log(data)
+                                // $('#toBFS')[0].src=data
+                                // console.log(data)
+                                // console.log($('#toBFS'));     
+                        } else {
+                                alert(result.msg);
+                        }
+		  }
+            }) 
+
+        }
+
+
+        getlist()
+        getOA()
+        getOA2()
+        // getTodo()
+
+        getCount()
+        getOnlineCount()
+        getUser()
+        getUserBfsByUserId()
+        // getSCZB()
+        // setInterval(function(){
+        //         getSCZB()    
+        // },1000*10)
+        // var myCalendar = new SimpleCalendar('#container');
+        // myCalendar.updateSize('800px', '500px');
+
+        // $(".communionDetail-connect").height($(window).height()-70) 
+    </script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒店预订</title>
+    <link rel="stylesheet" href="./lib/css/base.css">
+    <link rel="stylesheet" href="./lib/css/laydate.css">
+    <!-- <link rel="stylesheet" href="./lib/css/jquery.fullPage.css"> -->
+    <!-- <link rel="stylesheet" href="./lib/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/booktavern.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./lib/css/xcConfirm.css">
+    <style>
+        .xcConfirm .popBox .ttBox{
+            height: 51px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="booktavern">
+            <!-- <header class="header fixed-top"> 
+                    <div class="header-box"> 
+                            <div class="logo"><a href="./index.html"><img src="./img/logo.jpg" alt=""></a></div> 
+                            <ul class="nav-list"> 
+                            <div class="nav-item"><a class="as" href="./index.html#section-two">走进锡林</a></div> 
+                            <div class="nav-item"><a class="as" href="./index.html#section-three">科技创新</a></div> 
+                            <div class="nav-item" id="recommend-nav"> <a class="as" href="./news.html">公司新闻</a> </div> 
+                            <div class="nav-item" id="advantage-nav"> 
+                                    <a class="as" href="./industrialtourism.html">工业旅游</a> 
+                                    <div class="mask"></div> 
+                                    <div class="sub-nav"> 
+                                            <ul class="sub-nav-list"> 
+                                                    <li><a href="./booktavern.html">酒店预订</a></li> 
+                                                    <li><a href="./meeting.html">会议服务</a></li>  
+                                            </ul> 
+                                    </div> 
+                            </div> 
+                            <div class="nav-item"><a class="as" href="./achievement.html">社会责任</a></div> 
+                            <div class="nav-item"><a class="as" href="./PartyMemberNews.html">党群建设</a></div> 
+                            <div class="nav-item"><a class="as" href="./news.html">内部交流</a></div> 
+                            </ul>       
+                    </div> 
+        </header>    -->
+            <div class="tavern">
+                    <div class="title">
+                            <hgroup><h1>酒店预订</h1><h6>
+                                <!-- <span class="blue">[锡林郭勒]</span> 幸福东路3段71号</h6> -->
+                            </hgroup>
+                    </div>
+                    <div class="tavern-img">
+                        <div class="left">
+                            <!-- <div class="img"  style="background-image: url('./img/room/img_room_01.jpg')">
+                            </div> -->
+                        </div>
+                        <div class="right">
+                            <div>
+                                    <!-- <li>
+                                        <div class="img" style="background-image: url('./img/room/img_room_02.jpg')"></div>
+                                    </li>
+                                    <li>
+                                        <div class="img" style="background-image: url('./img/room/img_room_03.jpg')"></div>
+                                    </li>
+                                    <li>
+                                        <div class="img" style="background-image: url('./img/room/img_room_09.jpg')"></div>
+                                    </li>
+                                    <li>
+                                        <div class="img" style="background-image: url('./img/room/img_room_10.jpg')"></div>
+                                    </li> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flg">
+                            <div class="tavern-info" style="width: 97.7%;">
+                                    <div class="title">
+                                            房型信息
+                                    </div>
+                                    <div class="list">
+                                        <!-- <div class="item">
+                                            <div class="left">
+                                                <img src="./img/room/img_room_06.jpg" alt="">
+                                            </div>
+                                            <div class="right">
+                                                <div>
+                                                    <div class="info">
+                                                        <div class="tit">草原景观房</div>
+                                                        <div class="connect">
+                                                                千兆带宽<br/> 4星级酒店服务
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ri">
+                                                        <div class="btn">
+                                                                <a href="javascript:;"  data-name="草原景观房">
+                                                                        预订
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                                <div class="left">
+                                                    <img src="./img/room/img_room_07.jpg" alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div>
+                                                        <div class="info">
+                                                            <div class="tit">工业景观房</div>
+                                                            <div class="connect">
+                                                                    千兆带宽<br/> 4星级酒店服务
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ri">
+                                                            <div class="btn">
+                                                                    <a href="javascript:;" data-name="工业景观房">
+                                                                            预订
+                                                                    </a>
+                                                            </div>
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="left">
+                                                    <img src="./img/room/img_room_08.jpg" alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div>
+                                                        <div class="info">
+                                                            <div class="tit">套房</div>
+                                                            <div class="connect">
+                                                                    千兆带宽<br/> 4星级酒店服务
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ri">
+                                                            <div class="btn">
+                                                                    <a href="javascript:;" data-name="套房">
+                                                                            预订
+                                                                    </a>
+                                                            </div>
+                                                    </div>
+            
+                                                </div>
+                                            </div> -->
+
+                                    </div>
+        
+                            </div>
+                            <div class="hotel-order" style="width: 97.7%;">
+                                    <div class="reservation-information">
+                                        <div class="left">
+                                                预定信息
+                                        </div>
+                                        <div class="right">
+                                            <div><div class="til">房型信息</div> <div class="inf">豪华大床房</div> </div>
+                                            <div><div class="til">入离时间</div>  <div class="inf">
+                                                    <div class="datetime" id="input-datetime" style="align-items: center;display: none;">
+                                                            <input type="text" name="startime" id="test1" style="height:33px;text-align: center;"/>至<input type="text" name="endtime" id="test2" style="height:33px;text-align: center;"/>
+                                                    </div>
+                                                    <div class="settime">2019-02-14 周四 至 2019-02-15 周五 共1晚</div>
+                                                
+                                                &nbsp; <a href="javascript:;"><span class="blue" id="eidtTime">修改时间</span></a></div> </div>
+                                            <div><div class="til">房间数量</div> <div class="inf">
+                                                <div class="count">
+                                                        <span class="reduce">-</span>
+                                                        <input type="text" name="countnum" value="1" id="roomCount" />
+                                                        <span class="add">+</span>
+                                                </div>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                    <div class="occupancy-information">
+                                            <div class="left">
+                                                    入住信息
+                                            </div>
+                                            <div class="right">
+                                                <div><div class="til">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</div> <div class="inf"> <input type="text" id="name" placeholder="入住人姓名" width="300px"/></div> </div>
+                                                <div><div class="til">联系电话</div>  <div class="inf"> <input type="text" id="phone" placeholder="请输入联系电话" width="300px" /></div> </div>
+                                                <div><div class="til">入住人数</div>  <div class="inf"> <input type="text" id="peopleCount" placeholder="请输入入住人数"  width="300px"/></div> </div>
+                                                <div><div class="til">验&nbsp;&nbsp;证&nbsp;&nbsp;码</div>  <div class="inf">
+                                                    <input type="text" id="randomCode" name="lname" placeholder="请输入验证码" width="300px" name="yan"/>
+                                                    <div class="code">
+                                                        <span style="color:red;margin-right: 2px;" class="one">7</span>
+                                                        <span style="color:blue;margin-right: 2px;" class="two">3</span>
+                                                        <span style="color:green;margin-right: 2px;" class="there">6</span>
+                                                        <span style="color:rgba(24, 23, 23, 0.849);margin-right: 2px;" class="four">4</span> 
+                                                    </div>    
+                                                </div></div>
+                                            </div>
+                                    </div>
+                                       <div class="btn center">
+                                                    <a href="#" style="background-color: #208DF7;background-image:none;" id="submit" >
+                                                            确定预订
+                                                    </a>
+                                            </div>
+                                </div>
+                    </div>
+                </div>
+            <!-- <div class="section footer fp-auto-height" >
+                <hgroup class="foo">
+                        <h5>Copyright © www.AxureUX.com, All Rights Reserved</h5>
+                        <h5> Email : xxxxxxxx  QQ: 5698401</h5>
+                </hgroup>
+            </div> -->
+    </div>
+    <script src="./lib/js/jquery-1.8.3.min.js"></script>
+    <script src="./lib/js/laydate.js"></script>
+    <script src="./js/public.js"></script>
+    <script src="./lib/js/xcConfirm.js"></script>
+    <script src="./js/common.js"></script>
+    <!-- <script src="./lib/js/jquery.fullPage.min.js"></script> -->
+    <script>
+        laydate.render({
+                elem: '#test1', //指定元素
+        });
+        laydate.render({
+                elem: '#test2', //指定元素
+        });
+        var weekday = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"]
+        getCode()
+        getHostlTopData()
+        getHostlData()
+        $(function(){
+            
+            setTimeout(function(){
+                var width = $(".tavern .tavern-img .left").width()
+                $(".tavern .tavern-img .left").height(width*0.714285714)
+                var width2 = $(".tavern .tavern-img .right div li").width()
+                $(".tavern .tavern-img .right div li").height(width2*0.575117371)
+                var tavernHeight = $(".tavern-info").outerHeight(true)
+                $(".flg").height(tavernHeight)
+                $(".hotel-order").animate({"left":$(".hotel-order").outerWidth(true)+10000},500);
+
+                $(".add").on("click",function(){
+                    var count= $("#roomCount").val()
+                    if(count>9){
+                        $("#roomCount").val(count)
+                    }else {
+                        count++;
+                        $("#roomCount").val(count)
+                    }
+                })
+                $(".reduce").on("click",function(){
+                    var count= $("#count").val()
+                    if(count<2){
+                        $("#roomCount").val(count)
+                    }else {
+                        count--;
+                        $("#roomCount").val(count)
+                    }
+                })
+
+
+                $(".ri .btn a").on("click",function(){
+                    $(".flg").css({height:$(".hotel-order").outerHeight(true)})   
+                    $(".tavern-info").animate({"left":-($(".tavern-info").outerWidth(true)+10000)},500);	
+                    $(".hotel-order").animate({"left":0},600);
+                })
+
+                $(".ri .btn a").on("click",function(){
+                    $(".reservation-information .right div:first-child  .inf").text($(this).attr("data-name"))
+                    $(".reservation-information .right div:first-child  .inf").attr("data-id",$(this).attr("data-id"))
+                })
+            
+
+                function getime(datetime1,datetime2){
+                    var html = '';
+                    var time ;
+                    var timeafter ;
+                    var countday;
+                    $('#test1').val(new Date())
+                    $('#test2').val(new Date(new Date().setDate(new Date().getDate()+1)))
+                    if(datetime1){
+                        time = datetime1;
+                    }else {
+                        time = new Date();
+                    }
+                    countday = time.getDate()
+                    html = ""+time.getFullYear()+"-"+(time.getMonth()+1)+"-"+time.getDate()+" "+weekday[time.getDay()]+" 至 "
+                    if(datetime1){
+                        timeafter = datetime2;
+                    }else {
+                        timeafter =  new Date(time.setDate(time.getDate()+1))
+                    }
+                    html += ""+timeafter.getFullYear()+"-"+(timeafter.getMonth()+1)+"-"+timeafter.getDate()+" "+weekday[timeafter.getDay()]+" 共"+(timeafter.getDate()-countday)+"晚";
+                    return html
+                }
+
+                
+                $(".settime").text(getime())
+
+                $("#eidtTime").on("click",function(){
+                    var html = '修改时间'
+                    var html2= '保存修改'
+                    if($(this).text()===html){
+                        $("#input-datetime").show()
+                        $(".settime").hide()
+                        $(this).text("保存修改")
+                    }else if($(this).text()===html2){
+                        var starttime = $("#test1").val();
+                        var endtime = $("#test2").val();
+                        $(".settime").text(getime(new Date(starttime),new Date(endtime)))
+                        $("#input-datetime").hide()
+                        $(".settime").show()
+                        $(this).text("修改时间")
+                    }             
+                })
+                $("#submit").on("click",function(){
+                       var inTime = formarttime($("#test1").val())
+                       var outTime = formarttime($("#test2").val())
+                       var name  = $("#name").val()
+                       var phone  = $("#phone").val()
+                       var peopleCount  = $("#peopleCount").val()
+                       var randomCode = $("#randomCode").val()
+                       var roomCount  = $("#roomCount").val()
+                       var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
+                       var id = $(".reservation-information .right div:first-child .inf").attr("data-id")
+                       if(!inTime){
+                           alert('请选择开始时间')
+                           return
+                       }else if(!outTime){
+                           alert('请选择结束时间')
+                           return
+                       }else if(!roomCount){
+                           alert('请输入房间数量')
+                           return
+                       }else if(!name){
+                           alert('请填写姓名')
+                           return
+                       }else if(!phone){
+                           alert('请输入手机号')
+                           return
+                       }else if(!myreg.test(parseInt(phone))){
+                         alert('手机号码格式不对')
+                         return
+                       }else if(!peopleCount){
+                           alert('请输入会议人数')
+                           return
+                       }else if(!(typeof parseInt(peopleCount) === 'number' && parseInt(peopleCount)%1 === 0)){
+                           alert('请输入正确的人数')
+                           return
+                       }
+                       else if(!randomCode){
+                           alert('请输入验证码')
+                           return
+                       }
+                        var txt=  "你确定提交订单？";
+                        window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.info,{
+						onOk:function(v){
+                            $.ajax({
+                                type: 'POST',
+                                url: CURRENCY_HOST + '/auth/website/saveHotel',
+                                data: JSON.stringify({
+                                    "infoId":id,
+                                    "inTime":inTime,
+                                    "outTime":outTime,
+                                    "name":name,
+                                    "phone":phone,
+                                    "peopleCount":peopleCount,
+                                    "roomCount":roomCount,
+                                    "randomCode":randomCode
+                                }),
+                                dataType: "json",
+                                contentType: 'application/json',
+                                success: function(result, text, request) {
+                                    if (result.success) {
+                                        // var result = JSON.parse(result)
+                                        alert('订单提交成功')
+                                        window.location.href = window.location.origin + "/booktavern.html";
+                                    } else {
+                                        alert(result.msg);
+                                    }
+                                }
+                            
+                            }); 
+
+                        }
+                    })
+                        
+                })
+                $(".occupancy-information .right div .inf .code").on("click",function(){
+                        getCode()
+                })
+            },200)
+        })
+
+        // 设置验证码
+        function getCode(){
+                $.ajax({
+                    type: 'get',
+                    url: CURRENCY_HOST + '/auth/website/createRandom',
+                    contentType: 'application/json',
+                    success: function(result, text, request) {
+                    var result = JSON.parse(result)
+                    if (result.success) {
+                                var data = result.data
+                                $('.one').text(data[0])
+                                $('.two').text(data[1])
+                                $('.there').text(data[2])
+                                $('.four').text(data[3])
+                                // console.log()
+                                // rendertop(result.data)
+                                // renderRoom(result.data)
+                        } else {
+                            alert(result.msg);
+                    }
+                }
+            })
+        }
+    //    ?pageNumber=1&pageSize=13&status=&startdate=&enddate=&title=&type=5
+
+        function getHostlTopData(){
+                $.ajax({
+                    type: 'get',
+                    url: CURRENCY_HOST + '/auth/website/getCarouses?type=3',
+                    contentType: 'application/json',
+                    success: function(result, text, request) {
+                    var result = JSON.parse(result)
+                    if (result.success) {
+                            rendertop(result.data)
+                                // renderRoom(result.data)
+                        } else {
+                            alert(result.msg);
+                    }
+                }
+            })
+        }
+        function getHostlData(){
+                $.ajax({
+                    type: 'get',
+                    url: CURRENCY_HOST + '/auth/website/getList?type=5&status=2',
+                    contentType: 'application/json',
+                    success: function(result, text, request) {
+                    var result = JSON.parse(result)
+                    if (result.success) {
+                            renderRoom(result.data.result)
+                        } else {
+                            alert(result.msg);
+                    }
+                }
+            })
+        }
+        function rendertop(data){
+            var left = $('.tavern .tavern-img .left')
+            var right = $('.tavern .tavern-img .right div')
+            left.append([" <div class=\"img\"  style=\"background-image: url(\'"+data[0].picPath+"\')\"></div>"].join(""))
+            for(var i=1;i<data.length;i++){
+                    right.append([" <li><div class=\"img\" style=\"background-image: url(\'"+data[i].picPath+"\')\"></div></li>"].join("")) 
+            }
+        }
+        function renderRoom(data){
+            var doc = $('.list')
+            for(var i=0;i<data.length;i++){
+                doc.append(
+                            ["   <div class=\"item\">",
+"                                            <div class=\"left\">",
+"                                                <img src=\""+data[i].picPath+"\" alt=\"\">",
+"                                            </div>",
+"                                            <div class=\"right\">",
+"                                                <div>",
+"                                                    <div class=\"info\">",
+"                                                        <div class=\"tit\">"+data[i].title+"</div>",
+"                                                        <div class=\"connect\">",
+"                                                                "+data[i].remark+"",
+"                                                        </div>",
+"                                                    </div>",
+"                                                </div>",
+"                                                <div class=\"ri\">",
+"                                                        <div class=\"btn\">",
+"                                                                <a href=\"javascript:;\"  data-name=\""+data[i].title+"\" data-id=\""+data[i].id+"\">",
+"                                                                        预订",
+"                                                                </a>",
+"                                                        </div>",
+"                                                </div>",
+"                                            </div>",
+"                                        </div>"].join("")
+                        )
+            }
+        }
+            // data.forEach(element => {
+
+            //     })
+            // }
+        
+    </script>
+</body>
+</html>

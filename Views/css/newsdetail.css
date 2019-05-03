@@ -1,0 +1,50 @@
+.newsdetail{
+    margin: 0 auto;
+}
+.newsdetail-connect{
+    min-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+}
+.newsdetail .newsdetail-bg{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.newsdetail-info .title {
+    margin-top: 65px;
+    /* justify-content: center; */
+    border-bottom: 1px solid #D1D1D1;
+}
+.newsdetail-info .title h2{
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+.newsdetail-info .title .auteh{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.newsdetail-info .title .auteh span{
+    font-size: 14px;
+    color: #666666;
+}
+.newsdetail-info .connect{
+    padding: 70px 0px;
+    margin-bottom: 130px;
+}
+.newsdetail-info .connect p{
+    color: #666666;
+    font-size: 16px;
+    text-indent: 2em;
+    letter-spacing:2px;  
+}
+.newsdetail-info .connect div{
+    text-align: center;
+    margin: 70px 0px 90px;
+    overflow: hidden;
+}
+

@@ -1,0 +1,178 @@
+html,body {
+    padding:0;
+    margin:0;
+    background-color: #fff;
+    font-family: "微软雅黑";
+	height: 100%;
+}
+
+.content {
+	position: relative;
+	height: 100%;
+    margin: 0px auto;
+    border: 1px solid #ddd;
+    background-image: url(../res/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+.am-tabs-nav {
+    font-weight: bold;
+}
+
+.am-form-field {
+    background-color: #fff
+}
+.textDiv {
+	padding-left: 27px;
+    padding-top: 17px;
+    width: 100%;
+    /* float: left; */
+    overflow: hidden;
+    display: block;
+    /* float: left; */
+}
+
+.textDiv .logo{
+	width: 40%;
+	display: flex;
+    /* margin: 1% auto 0; */
+	margin-left: 1%;
+	font-size: 30px;
+}
+.textDiv .logo{
+	/* background: #ff870f; */
+	color:#208DF7
+}
+
+.textDiv .logo img{
+	/* width: 20%; */
+	width: 59px;
+	height: 50px;
+	display: inline-block;
+}
+.textDiv .logo h3{
+	margin-top: 10px;
+	margin-left: 8px;
+}
+
+.textDiv .title{
+	margin-top: 30px;
+    font-size: 30px;
+    color: #208DF7;
+}
+
+.textDiv .title img{
+	width: 100%;
+	display: block;
+}
+
+.loginDiv {
+	width: 39%;
+    height: 70%;
+    /* float: left; */
+    /* position: relative; */
+    background: rgba(4,6,28,0.66);
+    padding: 3% 3% 0;
+    /* margin-top: 5%; */
+    margin: 20px;
+    margin: 3% auto;
+}
+
+
+.loginDiv .am-u-sm-12 .login-btn{
+	background: #208DF7;
+	border-color:#208DF7
+}
+
+.loginDiv h4{
+	color: #fff;
+    font-size: 32px;
+    margin-bottom: 40px;
+
+}
+
+.loginDiv .input-box{
+	border-radius: 6px;
+	background: #fff;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.loginDiv .input-box .am-u-sm-12{
+	border: none;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	/* padding: 10px 0; */
+}
+.am-btn{
+    padding: 0px;
+}
+
+.loginDiv .input-box .am-u-sm-12:last-child{
+	border-bottom: none;
+}
+
+.loginDiv .input-box .am-u-sm-12 .icon-span{
+	float: left;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-right: 1px solid #ddd;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+
+.left1 {
+    background-image: url(../res/User.png);
+}
+
+.left2 {
+    background-image: url(../res/Lock.png);
+}
+
+.loginDiv .input-box .am-u-sm-12 input{
+	color: #333;
+	border: none;
+	float: left;
+	width: 70%;
+	padding: 0 0 0 20px;
+	line-height: 50px;
+	height: 50px;
+}
+
+.layui-layer-rim .browser-list{
+    overflow: hidden;
+    width: 368px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 55px;
+}
+
+.layui-layer-rim .layer-msg{
+    margin-top: 73px;
+    font-size: 20px;
+    text-align: center;
+}
+.layui-layer-rim .browser-list li{
+    list-style: none;
+    float:left
+}
+
+.layui-layer-rim .browser-list .layer-mg{
+    margin-right:130px;
+}
+
+.layui-layer-rim .browser-list li img{
+    width:100px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    background-color: rgb(0, 0, 0) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+    -webkit-tap-highlight-color:rgba(0,0,0,0) !important;
+}

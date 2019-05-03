@@ -1,0 +1,85 @@
+.booktavern{
+    margin: 0 auto;
+
+}
+.tavern{
+    min-width: 1200px;
+    width: 83.33%;
+    margin: 0 auto;
+}
+.tavern .title{
+    margin-top: 100px;
+}
+.tavern .tavern-img{
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+}
+.tavern .tavern-img .left{
+    width: 41%;
+    height: 94%;
+}
+.tavern .tavern-img .left img{
+    width: 100%;
+}
+.tavern .tavern-img .right{
+    width: 100%;
+    display: flex;
+}
+.tavern .tavern-img .right div{
+    width: 100%;
+    display: inline-block;
+    /* justify-content: space-between; */
+
+}
+.tavern .tavern-img .right div li{
+    width: 24.4375%;
+    display: inline-block;
+    overflow: hidden;
+}
+/* .tavern .tavern-img .right div li:hover{
+    background-size: 150%;
+    transition: all 1.5s ease;
+}
+.tavern .tavern-img .right div li img{
+    width: 100%;
+} */
+
+.tavern .tavern-img .right div li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.tavern .tavern-img .right div li .img:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+/* .tavern .tavern-img .right div li:nth-child(5){
+    width: 25%;
+} */
+
+
+
+
+/* .occupancy-information .count input{
+    height: 33px;
+    width: 100px;
+} */
+
+
+
+
+
+
+
+
+
+
+

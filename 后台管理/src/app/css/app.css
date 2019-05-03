@@ -1,0 +1,291 @@
+.layout__container {
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 100%;
+	background: hsl(0, 0%, 95%);
+}
+
+.layout__sidebar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+}
+
+.layout__sidebar .sidebar-item {
+	height: 100%;
+	background: #232837
+}
+
+.layout__sub-sidebar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	border-right: 1px solid #d1dbe5;
+	background-color: #eee;
+}
+
+.layout__sub-sidebar .sub-sidebar__title {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	margin: 0;
+	font-size: 14px;
+	line-height: 78px;
+	text-indent: 20px;
+	background-color: #d9dee4;
+}
+
+.layout__sub-sidebar .sub-sidebar__menu {
+	overflow: auto;
+	position: absolute;
+	top: 78px;
+	bottom: 0;
+	width: 100%;
+}
+
+.layout__sub-sidebar .sub-sidebar__menu .el-menu-item,
+.layout__sub-sidebar .sub-sidebar__menu .el-submenu__title {
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #fff
+}
+
+.layout__sub-sidebar .sub-sidebar__menu>.el-menu-item,
+.layout__sub-sidebar .sub-sidebar__menu .el-submenu .el-menu>.el-menu-item {
+	padding: 0 !important;
+}
+
+.layout__sub-sidebar .sub-sidebar__menu .comp__link-type a {
+	display: block;
+	padding: 0 20px;
+	text-decoration: none;
+	/* color: #48576a; */
+	color: #fff;
+}
+
+.layout__sub-sidebar .sub-sidebar__menu .el-submenu .comp__link-type a {
+	padding-left: 40px;
+}
+
+.layout__sub-sidebar .comp__link-type a.router-link-active {
+	color: #2277da;
+}
+
+.layout__content {
+	overflow-y: auto;
+	position: relative;
+	height: 100%;
+	background-color: #f3f3f3;
+}
+
+.layout__content>div {
+	position: relative;
+}
+
+.table-title {
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+
+.page-header {
+	overflow: hidden;
+	height: 41px;
+	border-bottom: 1px solid #e9e9e9;
+	margin-bottom: 10px;
+	padding: 4px 0;
+	line-height: 32px;
+}
+
+.page-header+.page-body {
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	width: 100%;
+}
+
+.page-title {
+	float: left;
+	margin: 0 15px 0 0;
+	font-size: 18px;
+	font-weight: 400;
+	padding-left: 10px;
+}
+
+
+.page-title--sub {
+	float: right;
+	font-size: 12px;
+	line-height: 2;
+}
+
+.card {
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+table .unit {
+	margin-right: -.5em;
+	font-size: 12px;
+	color: #919191;
+}
+
+.ql-editor {
+	min-height: 114px;
+}
+
+.ql-editor.ql-blank::before {
+	font-style: normal;
+}
+
+.popver-footer {
+	text-align: right;
+}
+
+.span-instuction {
+	float: left;
+	margin-right: 10px;
+	line-height: 28px;
+}
+
+.icon-refresh {
+	background: rgb(247, 247, 247);
+	width: 42px;
+	height: 32px;
+	float: right;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 32px;
+	border: 1px solid #aaa
+}
+
+.icon-refresh img {
+	width: 18px;
+	margin-top: 7px;
+}
+
+table thead th .cell {
+	font-weight: bold
+}
+
+.sub-title-name {
+	line-height: 26px;
+}
+
+#app .el-table td,
+#app .el-table th {
+	padding: 8px 0;
+}
+
+#app .col-12 {
+	float: left;
+	width: 50%;
+}
+
+#app .el-table td {
+	padding: 0;
+}
+
+#app .el-table th {
+	background: #ebeded;
+}
+
+#app .el-dialog .el-dialog__header {
+	border-bottom: 1px solid #ddd
+}
+
+#app .el-dialog .el-dialog__footer {
+	padding: 10px;
+	border-top: 1px solid #ddd
+}
+
+#app .el-dialog .el-dialog__body {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.el-table {
+	margin-top: 0;
+}
+
+#app .el-table__footer-wrapper tbody td,
+.el-table__fixed-footer-wrapper tbody td {
+	background: #d5d6d7;
+	font-weight: bold;
+}
+
+.search-select,
+.search-input {
+	width: 220px;
+}
+
+.form {
+	overflow: hidden;
+}
+
+.form .form-left {
+	display: inline-block;
+	width: 50%;
+}
+
+.form .form-right {
+	float: left;
+	width: 50%;
+}
+
+.search-div {
+	margin: 5px 0;
+	overflow: hidden;
+}
+
+.search-div_box {
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+}
+
+.search-div_box .search-select,
+.search-input {
+	flex: 1;
+	margin-right: 5px;
+}
+
+.search-div_box .el-input__inner {
+	line-height: 30px;
+	height: 32px;
+}
+
+.search-div_box .el-input__icon {
+	line-height: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	/* firefox */
+}
+
+.el-menu--vertical .el-menu-item a {
+	width: 100%;
+	height: 100%;
+	display: block
+}
+
+.el-table th>.cell {
+	color: #333 !important;
+}
+
+.el-table td div {
+	color: #666 !important;
+}

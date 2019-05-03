@@ -1,0 +1,95 @@
+.communion{
+    margin: 0 auto;
+
+}
+.communion-connect{
+    min-width: 1200px;
+    width: 83.333%;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.communion-connect .login{
+    padding: 0 57px 28px;
+    width: 680px;
+    height: 400px;
+    background-color: #fff;   
+}
+.login {
+    text-align: center;
+}
+.login .tit{
+    margin-top: 34px;
+    text-align:center;
+    line-height: 30px;
+    align-items: center;
+    font-size: 30px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .tit .line{
+    display: inline-block;
+    height: 1px;
+    width: 188px;
+    background-color: #CCCCCC;
+}
+.login .tit .point{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+}
+.login .tit p{
+    margin: 0px 25px;
+}
+.login .login-connect{
+    margin-top: 87px;
+}
+.login .login-connect .item{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    border-bottom: 1px solid #C9C9C9;
+    margin-bottom: 78px;
+    display: flex;
+
+}
+.login .login-connect .item span{
+    width:53px;
+    color: #333333;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.login .login-connect .item:last-child{
+    margin-bottom: 57px;
+}
+.login .login-connect .item input{
+    border: none;
+    text-align: center;
+    width: 475px;
+    color: #999999;
+}
+.login .login-connect .item input:focus{outline:none;}
+
+.login .button{
+    width: 100%;
+    height: 43px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/矩形13.jpg');
+    text-align: center;
+    line-height: 43px;
+    color: #F9F9F9;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+

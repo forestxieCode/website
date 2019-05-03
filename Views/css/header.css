@@ -1,0 +1,250 @@
+
+
+
+/* .navbar-default{
+   background-repeat:repeat-x;
+   border:none;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.25);
+   background-color:transparent; 
+   opacity: 1; 
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+    margin-left: -33%;
+}
+.navbar-default:hover{
+
+   opacity: 1;
+   background-color: rgba(255,255,255,1);
+   transition: all 0.5s ease;
+}
+
+
+.navbar-default .navbar-brand{
+   font-family: "Brush Script Std Medium";
+   font-size: 30px;
+   font-weight: bold;
+   color: #333333;
+   height: 50px;
+   line-height: 20px;
+}
+.navbar-default .navbar-nav > li >a{
+   font-size: 16px;	
+   color: #333333;
+   height: 50px;
+   line-height: 25px;
+}
+
+
+.navbar-default .navbar-nav > li:hover{
+   
+   background-color: #3bb1e5;
+}
+.navbar-default .navbar-nav > li:hover a{
+   color: #fff;
+}
+.navbar-default .navbar-toggle:hover{
+   border-color: #40D2b1;
+   background-color: #3bb1e5;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+   background-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+   background-color: #333333;
+}
+
+.navbar-default .sub-nav{
+    position: fixed;
+    width: 100%;
+}
+.navbar-default .sub-nav .sub-nav-list{
+    position: absolute;
+    display: flex;
+
+} */
+
+
+
+
+
+
+
+.header {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	transition: all .3s;
+    border-bottom: 1px solid rgba(252,252,253,0.17);
+	/* background-color:transparent;  */
+	background-color: rgba(255,255,255,1);
+    /* opacity: 0;  */
+}
+/* 
+.header:hover{
+    opacity: 1;
+    background-color: rgba(255,255,255,1);
+    transition: all 0.5s ease;
+	border-bottom: 1px solid rgba(56,61,65,1);
+} */
+
+.header.fixed-top {
+	color: #404040;
+}
+
+.header .header-box {
+	width: 84%;
+	min-width: 1200px;
+	margin: 0 auto;
+	height: 72px;
+}
+
+.header .logo {
+	float: left;
+	margin-right: 10%;
+}
+
+.header .logo img{
+	width: 220px;
+	display: block;
+	margin-top: 20px;
+}
+
+.header .nav-list {
+	float: left;
+}
+
+.header .nav-item {
+	display: inline-block;
+	padding: 0 10px;
+	vertical-align: top;
+	cursor: pointer;
+	margin: 0 5px;
+	height: 72px;
+	position: relative;
+}
+
+.header .nav-list .as {
+	line-height: 70px;
+	display: inline-block;
+	color: #333;
+}
+
+.header .nav-item.active{
+	border-bottom: 2px solid rgba(252,252,253,1);
+}
+
+.header .nav-item.active:hover{
+	border-bottom: 2px solid #3bb1e5;
+}
+
+.header .nav-item:hover .as {
+	color: #3bb1e5;
+}
+
+.header .sub-nav {
+	display: none;
+	position: absolute;
+	top: 72px;
+	left: 72%;
+	transform: translate(-50%);
+	z-index: 99;
+}
+
+.header .mask{
+	display: none;
+	position: fixed;
+	top: 72px;
+	height: 60px;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .2));
+	filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .2));
+	background:rgba(252,252,253,1);
+	z-index: 98;
+}
+
+.header .sub-nav-list {
+	padding-left: 0;
+	font-size: 14px;
+	line-height: 1.8;
+	text-align: center;
+	list-style: none;
+	border-radius: 3px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header .nav-item:hover .sub-nav {
+	display: block;
+}
+
+.header .nav-item:hover .mask{
+	display: block;
+}
+
+.header .sub-nav-list li {
+	line-height: 60px;
+	margin-right: 30px;
+	display: inline-block;
+}
+
+.header .sub-nav-list li a{
+	display: inline-block;
+	line-height: 60px;
+	color: #333;
+}
+
+.header .mask.scroll{
+	display: none!important;
+}
+
+.header .sub-nav.scroll{
+	position: fixed!important;
+	top:0px!important;
+	display: block!important;
+	background-color: rgba(255,255,255,1)!important;
+	
+}
+
+.header .sub-nav.scroll .sub-nav-list li a{
+	color: #333;
+}
+
+.header .sub-nav.scroll .sub-nav-list li a:hover{
+	color: #3bb1e5;
+}
+
+.header .sub-nav-list li:hover a{
+	color: #3bb1e5;
+}
+
+.header .header-box .login {
+	float: right;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.header .header-box .login a{
+	line-height: 70px;
+	color: #fff;
+}
+
+.header .header-box .login:hover a {
+	color: #3bb1e5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

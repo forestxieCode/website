@@ -1,0 +1,191 @@
+$color:#206DF3;
+$colors:#208DF7;
+
+.el-table th {
+	font-weight: 400;
+}
+
+.el-pagination {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.el-dialog .el-dialog__header {
+	padding-top: 15px;
+}
+
+.el-dialog .el-dialog__body {
+	padding: 15px 20px;
+}
+
+.el-dialog__body+.el-dialog__footer {
+	padding-top: 0;
+	margin-top: -15px;
+}
+
+button.el-button+.el-button {
+	margin-left: 5px;
+}
+
+.el-badge .el-badge__content {
+	border: none;
+}
+
+.el-select {
+	width: 100%;
+}
+
+.el-card .el-card__body {
+	padding: 10px;
+}
+
+.el-tooltip__popper {
+	letter-spacing: 1px;
+}
+
+.el-button--primary {
+	background: $color;
+	border-color: $color;
+}
+
+.el-button--primary.is-active,
+.el-button--primary:active {
+	background: $colors;
+	border-color: $colors;
+}
+
+.el-button--primary:focus,
+.el-button--primary:hover {
+	background: $colors;
+	border-color: $colors;
+}
+
+.el-table__body tr.hover-row>td {
+	background-color: #fff9f9;
+}
+
+// .el-button--text {
+// 	color: $color;
+// }
+
+// .el-button--text:hover {
+// 	color: $colors;
+// }
+
+// .el-table__row .el-button--text {
+// 	color: $color;
+// }
+
+// .el-table__row .el-button--text:hover {
+// 	color: $color;
+// }
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+	background-color: $color;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+	color: $color;
+}
+
+.el-tabs__item.is-active {
+	color: $color;
+}
+
+.el-tabs__active-bar {
+	background-color: $color;
+}
+
+.el-tabs__item:hover {
+	color: $color;
+}
+
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+	background-color: $color;
+	border-color: $color;
+	-webkit-box-shadow: -1px 0 0 0 $color;
+	box-shadow: -1px 0 0 0 $color;
+}
+
+.el-radio-button__inner:hover {
+	color: $color;
+}
+
+.el-select-dropdown__item.selected {
+	color: $color;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+	border-color: $color;
+}
+
+.el-select .el-input__inner:focus {
+	border-color: $color;
+}
+
+.el-menu-item.is-active {
+	color: $color;
+}
+
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+	background-color: #e9e9e9;
+	border-color: #e9e9e9;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+	color: $color;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+	background-color: $color;
+	border-color: $color;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item:hover {
+	color: $color !important;
+}
+
+.el-checkbox__input .el-checkbox__inner:hover {
+	border-color: $color !important;
+}
+
+.el-checkbox__input.is-focus .el-checkbox__inner {
+	border-color: $color !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+	border-color: $color !important;
+	background: $color !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+	color: $color !important;
+}
+
+.el-button--danger {
+	padding: 0 10px;
+	line-height: 30px;
+	height: 32px;
+	font-size: 14px;
+}
+
+.el-dialog__title {
+	border-left: 3px solid $color;
+	padding-left: 8px;
+}
+
+.el-button--medium {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.el-button--primary{
+	padding: 8px 10px;
+	font-size: 14px;
+	border-radius: 4px;
+}

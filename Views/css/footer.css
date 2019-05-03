@@ -1,0 +1,22 @@
+.footer{
+    background-color: #383838;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 177px; */
+}
+.footer .foo{
+    display: block;
+    height:177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer .foo h5{
+    text-align: center;
+    color: #8E8E8E;
+}
+/* .footer h5{
+    line-height: 30px;
+}                 */

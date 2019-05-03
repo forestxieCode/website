@@ -1,0 +1,690 @@
+.industrialtourism {
+    min-width: 1200px;
+}
+.industrialtourism .section-one .slide:nth-child(1){
+    /* background-image: url('../img/messting-img/img_001.jpg'); */
+    background-position: center;
+    background-size: cover;
+  
+}
+.industrialtourism .section-one .slide:nth-child(2){
+    /* background-image: url('../img/messting-img/second.jpg'); */
+    background-position: center;
+    background-size: cover;
+
+}
+.industrialtourism .section-one .slide:nth-child(3){
+    /* background-image: url('../img/messting-img/first.jpg'); */
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* section-two  */
+
+.section-two  .container{
+    width: 83.33%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.section-two  .container .title{
+    margin-top: 2%
+}
+.section-two  .container  .connect{
+    margin-top: 2%;
+}
+
+
+.section-two  .container .introduction ul{
+    display:flex;
+} 
+.section-two  .container .introduction li{
+    width: 25%;
+    height: 16%;
+    display: inline-block;
+    margin-right: 1%;
+    position: relative;
+    overflow: hidden;
+}
+.section-two  .container .introduction li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-two  .container .introduction li .img:hover{
+    transform: scale(1.5);
+}
+.section-two  .container  .introduction-card {
+    width: 100%;
+    /* width: 18%;
+    height: 16%; */
+}
+.container  .introduction-card img{
+    width: 100%;
+    height: 100%;
+}
+.container  .introduction-card .ti{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 11%;
+    color: #fff;
+    background-color: #FF4132;
+    font-size: 14px;
+    line-height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container  .introduction-card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1%;
+    color: #fff;
+    width: 100%;
+    height: 21%;
+    display: flex;
+    background:rgba(0,0,0,.5);
+    opacity:0.8;
+    align-items: center;
+}
+.container  .introduction-card h4{
+    font-size: 16px;
+    margin-bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+.container  .introduction-card h6{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.section-two  .container .activity{
+    margin-top: .8%
+}
+
+.section-two  .container .activity ul{
+    display:flex;
+} 
+.section-two  .container .activity li{
+    width: 33%;
+    height: 28%;
+    display: inline-block;
+    margin-right: 1%;
+    position: relative;
+    overflow: hidden;
+    /* background-size: 100%;
+    background-position: center; */
+}
+/* .section-two  .container .activity li:hover{
+    background-size: 150%;
+    transition: all 1.5s ease;
+} */
+
+.section-two .container .activity li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-two .container .activity li .img:hover{
+    transform: scale(1.5);
+}
+
+
+.section-two  .container  .activity-card {
+    width: 100%;
+    /* width: 18%;
+    height: 16%; */
+}
+.container  .activity-card img{
+    width: 100%;
+    height: 100%;
+}
+.container  .activity-card .ti{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 14%;
+    color: #fff;
+    background-color: #FF9D12;
+    font-size: 14px;
+    line-height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container  .activity-card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1%;
+    color: #fff;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    background:rgba(0,0,0,.5);
+    opacity:0.8;
+    align-items: center;
+}
+.container  .activity-card h4{
+    font-size: 16px;
+    margin-bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.container  .activity-card h6{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+/* end section-two */
+
+/* section-hotel */
+
+.section-hotel .container{
+    width: 83.33%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.section-hotel .container .title{
+    margin-top: 2%;
+}
+.section-hotel  .container  .connect{
+    margin-top: 2%;
+    height: auto;
+    display: flex;
+}
+.section-hotel  .container .connect .left{
+    width: 44.74%;
+    overflow: hidden;
+}
+/* .tavern .tavern-img .left:hover{
+    background-size: 150%;
+    transition: all 1.5s ease;
+} */
+
+.section-hotel  .container .connect .left .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-hotel  .container .connect .left .img:hover{
+    transform: scale(1.5);
+}
+
+.section-hotel  .container .connect .left img{
+    width: 100%;
+}
+.section-hotel  .container .connect .right{
+    width: 56.26%;
+    display: flex;
+    margin-left:  0.7555%;
+}
+
+.section-hotel  .container .connect .right div{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.section-hotel  .container .connect .right div:last-child{
+    margin-bottom: 0%;
+}
+.section-hotel  .container .connect .right div li{
+    width: 48.33333%;
+    /* background-position: center;
+    background-size: 100%; */
+    margin-bottom: 1.2%;
+    margin-right: 1.2%;
+    overflow: hidden;
+    float: left;
+}
+/* .tavern .tavern-img .right div li:hover{
+    background-size: 150%;
+    transition: all 1.5s ease;
+} */
+
+.section-hotel  .container .connect .right div li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-hotel  .container .connect .right div li .img:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+/* end section-hotel */
+
+/* section-three */
+
+.section-three  .tavern-img{
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+}
+.section-three .tavern-img .left{
+    width: 41%;
+    height: 94%;
+}
+.section-three  .tavern-img .left img{
+    width: 100%;
+}
+.section-three  .tavern-img .right{
+    width: 100%;
+    display: flex;
+}
+.section-three  .tavern-img .right div{
+    width: 100%;
+    display: inline-block;
+    /* justify-content: space-between; */
+
+}
+.section-three  .tavern-img .right div li{
+    width: 24.4375%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-right: .05%;
+    margin-bottom: .05%;
+}
+/* .tavern .tavern-img .right div li:hover{
+    background-size: 150%;
+    transition: all 1.5s ease;
+}
+.tavern .tavern-img .right div li img{
+    width: 100%;
+} */
+
+.section-three .tavern-img .right div li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-three  .tavern-img .right div li .img:hover{
+    transform: scale(1.5);
+}
+
+
+/* end section-three */
+
+
+
+
+
+
+
+.section-three  .container{
+    width: 83.33%;
+	margin: 0 auto;
+    overflow: hidden;
+}
+.section-three  .container .title{
+    margin-top: 2%
+}
+.section-three  .container .connect{
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+/* .section-three .connect .left {
+    width: 68.93%;
+    float: left;
+    margin-right: .57%;
+}
+
+.section-three .connect .left .top{
+    overflow: hidden;
+  
+}
+.section-three .connect .left .top li{
+    width: 49.5%;
+    height: 100%;
+    background-color: brown;
+    margin-right: 1%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+.section-three .connect .left .top li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-three .connect .left .top li .img:hover{
+    transform: scale(1.5);
+} */
+
+
+
+.inf {
+    position: absolute;
+    padding: 2%;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    left: 0; 
+    background:rgba(0,0,0,.5);
+    opacity:0.8;
+}
+.inf h4{
+    margin-bottom: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.inf h6{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/* .section-three .connect .left .top li .img{
+    width: 100%;
+    height: 100%;
+}
+.section-three .connect .left .top li:last-child{
+    margin-right: 0;
+}
+.section-three .connect .left .bottom{
+    margin-top: 1%;
+    overflow: hidden;
+  
+}
+.section-three .connect .left .bottom li{
+    width: 32.6%;
+    height: 100%;
+    background-color: blue;
+    margin-right: 1%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.section-three .connect .left .bottom li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-three .connect .left .bottom li .img:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+.section-three .connect .left .bottom li .img{
+    width: 100%;
+    height: 100%;
+}
+.section-three .connect .left .bottom li:last-child{
+    margin-right: 0;
+} */
+/* .section-three .connect .right {
+    width: 30.07%;
+    float: left;
+   
+}
+.section-three .connect .right .right-info{
+    overflow: hidden;
+
+}
+.section-three .connect .right .right-info  li{
+    width: 100%;
+    background-color: black;
+    margin-bottom: 3.4%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.section-three .connect .right .right-info  li .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    background-size: cover;
+    background-position: center;
+}
+.section-three .connect .right .right-info  li .img:hover{
+    transform: scale(1.5);
+}
+
+.section-three .connect .right .right-info  li:last-child{
+    margin-bottom: 0%;
+} */
+/* .card {
+    overflow: hidden;
+}
+.card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3%;
+    color: #fff;
+    width: 100%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+}
+ */
+
+
+
+
+
+
+/* section-three */
+
+/* 
+
+.section-three .connect .left{
+    width: 68.93%;
+    float: left;
+}
+.section-three .connect .left .top li{
+    width: 49.5%;
+    float: left;
+    margin-right: 1%
+}
+.section-three .connect .left .top li:last-child{
+    margin-right: 0;
+}
+.section-three .connect .left ul{
+    overflow: hidden;
+}
+.section-three .connect .left .top li .card{
+    width: 100%;
+    height: 100%;
+}
+.section-three .connect .left .top li .card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.section-three .connect .left .top li .card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3%;
+    color: #fff;
+    width: 100%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.section-three .connect .left .bottom li{
+    width: 22.5%;
+    display: flex;
+}
+.section-three .connect .left .bottom li .card{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 1%;
+    box-sizing: content-box;
+    display: inline-block;
+}
+.section-three .connect .left .bottom li .card img{
+    width: 100%;
+    height: 100%;
+}
+.section-three .connect .left .bottom li .card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3%;
+    color: #fff;
+    width: 100%;
+    height: 32%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.section-three .connect .right{
+    width: 33%;
+    height: 58%;
+}
+.section-three .connect .right  li{
+    width: 85%;
+    height: 19%;
+}
+.section-three .connect .right li .card{
+    width: 99%;
+    height: 19%;
+    position: relative;
+    overflow: hidden;
+    padding: 1%;
+    box-sizing: content-box;
+    display: inline-block
+}
+.section-three .connect .right li .card img{
+    width: 100%;
+    height: 100%;
+}
+.section-three .connect .right li .card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3%;
+    color: #fff;
+    width: 100%;
+    height: 32%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+} */
+
+/* pop-up-server */
+.pop-up-server{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* transform: translateY(50%) */
+    box-shadow: 0 0 3px 2px #fee;
+    right: 5px;
+    width: 54px;
+    height: 187px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.pop-up-server img{
+    display: block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+.pop-up-server .to div{
+    margin-top: 5px;
+    display: flex;
+    font-size: 13px;
+
+}
+.pop-up-server .line{
+    width: 100%;
+    height: 1px;
+    background-color: #E8E8E8;
+
+}
+.pop-up-server .bot div{
+    margin-top: 5px;
+    display: flex;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
