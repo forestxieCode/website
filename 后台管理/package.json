@@ -29,7 +29,7 @@
     "jquery-ui": "^1.12.1",
     "js-base64": "^2.4.9",
     "jsplumb": "^2.8.3",
-    "lodash": "4.17.4",
+    "lodash": "4.17.13",
     "moment": "2.18.1",
     "normalize.css": "7.0.0",
     "vue": "^2.5.16",
