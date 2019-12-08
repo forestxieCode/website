@@ -1,14 +1,4 @@
-# 售电一体化平台
-
-## 项目说明
-
-此项目使用 vue 脚手架工具 [vue-cli](https://github.com/vuejs/vue-cli) 构建，使用官方模板 [webpack](https://github.com/vuejs-templates/webpack)。
-
-目前前端页面的整体风格参考对象为 “腾讯云”
-
-使用 ESLint [Standard](https://standardjs.com/readme-zhcn.html) 规范代码格式
-
-## 项目目录结构
+项目目录结构
 
 -- /
 |-- build             -- 构建目录
