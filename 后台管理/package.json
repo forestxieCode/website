@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "0.16.2",
     "babel-polyfill": "^6.23.0",
-    "codemirror": "5.29.0",
+    "codemirror": "5.58.2",
     "cross-menu": "1.1.4",
     "echarts": "^4.1.0",
     "element-ui": "^2.4.5",
